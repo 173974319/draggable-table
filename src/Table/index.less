@@ -1,0 +1,51 @@
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  .table-container {
+    width: 48%;
+    box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.18);
+
+    .ant-table-tbody {
+      --bg-color: rgba(230, 247, 255, 0.8);
+
+      tr td {
+        border-top: 2px solid transparent;
+        border-bottom: 2px solid transparent;
+      }
+
+      tr.drop-over-upward td {
+        border-top: 2px dashed #1890ff;
+        background-color: var(--bg-color);
+      }
+
+      tr.drop-over-downward td {
+        border-bottom: 2px dashed #1890ff;
+        background-color: var(--bg-color);
+      }
+
+      tr.drop-over-inner td {
+        border-top: 2px solid #1890ff;
+        border-bottom: 2px solid #1890ff;
+        background-color: var(--bg-color);
+      }
+
+      tr[data-row-key='null-occupation'] td {
+        background-color: transparent !important;
+      }
+
+      tr.drop-over-upward-level-1 {
+        .ant-table-cell-with-append {
+          border-top: none !important;
+        }
+      }
+
+      tr.drop-over-downward-level-1 {
+        .ant-table-cell-with-append {
+          border-bottom: none !important;
+        }
+      }
+    }
+  }
+}
