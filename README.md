@@ -1,17 +1,16 @@
 # draggable-table
 
-[![NPM version](https://img.shields.io/npm/v/draggable-table.svg?style=flat)](https://npmjs.org/package/draggable-table)
-[![NPM downloads](http://img.shields.io/npm/dm/draggable-table.svg?style=flat)](https://npmjs.org/package/draggable-table)
-
 A table library based on ant-design table and react-dnd
 
 ## Usage
 
-TODO
-
-## Options
-
-TODO
+```
+      <DndTable
+        tableId={'table-1'}
+        dnd={dndProps1}
+        {...restAntdTableProps}
+      />
+```
 
 ## Development
 
